@@ -10,7 +10,7 @@ func index(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
-	fmt.Println("Hello World")
 	http.HandleFunc("/", index)
+	fmt.Println("Server starting...")
 	http.ListenAndServe(":3000", nil)
 }
